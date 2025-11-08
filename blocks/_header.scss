@@ -1,0 +1,62 @@
+header * {
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #E1EDE6;
+    color: #598D66;
+    height: 100px;
+    align-content: center;
+}
+
+@mixin smalltext ($color: green, $size: 20px) {
+    font-family: 'Raleway' ;
+    font-size: $size;
+    color: $color;
+}
+
+
+span{
+    @include smalltext($color: green, $size: 20px)
+}
+.nav-link, .dropdown-item{
+    color: #2C2D35;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover{
+    color: #162cd6;
+}
+.nav__burger-line{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+
+
+.nav-link{
+    @include smalltext (#2C2D35, 20px)
+}
+.nav-link:hover{
+    color: #376B44;
+}
+
+@media (max-width: 768px) {
+    .nav-link{
+        font-family: 'Raleway' ;
+        font-size: 18px;
+        color: #2C2D35;
+    }
+}
+
+@media (max-width: 376px) {
+    .nav-link{
+        padding-left: 15px;
+    }
+    .nav-link img{
+        display: none;
+    }
+}

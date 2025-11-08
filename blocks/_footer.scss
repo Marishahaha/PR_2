@@ -1,0 +1,56 @@
+
+footer{
+    background-color: #E1EDE6;
+}
+.footer{
+    display: flex;
+    max-width: 1110px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-block: 60px;
+    // padding-inline: 30px;
+}
+
+.footer__left{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+@mixin smalltext ($color, $size) {
+    font-family: 'Raleway' ;
+    font-size: $size;
+    color: $color;
+}
+
+h2{
+    @include smalltext(#2C2D35, 20px)
+}
+
+h2{
+    margin-top: 0;
+}
+
+p{
+    @include smalltext(#2C2D35, 15px)
+}
+
+.footer__right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media(max-width: 786px){
+    .footer__right{
+        display: none
+    }
+    .footer{
+        padding-inline: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

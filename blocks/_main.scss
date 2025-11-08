@@ -1,0 +1,139 @@
+// main__first
+// MODAL WINDOW
+@mixin smalltext ($color, $size) {
+    font-family: 'Raleway' ;
+    font-size: $size;
+    color: $color;
+}
+body{
+    background-color: #F4F6F5;
+}
+// FIRST BLOCK
+h1, h2{
+    @include smalltext(#598D66, 60px)
+}
+
+.col-md-6 p, #openModalBtn, .btn{
+    @include smalltext(#2C2D35, 20px)
+}
+
+.btn{
+    max-width: 225px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 21px 50px;
+    color: #598D66;
+    background-color: transparent;
+    border: solid 1px #598D66;
+    border-radius: 0;
+}
+.btn:active:active,.btn:hover{
+    background: #376B44;
+    color: white;
+    transition: all 0.2s
+}
+
+@media (max-width: 376px) {
+    .col-md-6 img{
+       display: none;
+    }
+    .py-5 .col-md-6:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+// MODAL WINDOW
+.modal-content{
+    margin: auto;
+    margin-top: 8%;
+    padding: 20px;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-fluid-sec{
+    height: 70px;
+}
+
+
+// SECOND BLOCK (TABS)
+
+.nav-link-sec{
+    @include smalltext(#2C2D35, 20px)
+
+}
+.nav-link-sec{
+    padding: 10px 24px;
+    background: #D4E8D9;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link-sec.active{
+    background: #376B44 !important;
+    color: white !important;
+    box-shadow: 0 4px 8px rgba(8, 61, 28, 0.153);
+    transform: translateY(-2px);
+}
+
+
+
+
+// АККОРДЕОН
+.accordion-button{
+    @include smalltext(#2C2D35, 20px)
+}
+
+h4{
+    @include smalltext(#598D66, 60px)
+}
+
+// КУКИ
+.alert-info {
+    background-color: #376B44
+}
+
+
+// СЛАЙДЕР
+.carousel {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: 500px !important;
+    width: 100% !important;
+    position: relative !important;
+    overflow: visible !important;
+    margin: 40px 0 !important;
+}
+
+h3{
+    @include smalltext(#2C2D35, 20px)
+}
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-notification {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+
