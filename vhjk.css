@@ -1,0 +1,25 @@
+/* slider-fix.css - ФИКС ДЛЯ СЛАЙДЕРА */
+#mainCarousel,
+.carousel,
+.carousel-slide,
+[data-bs-ride="carousel"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: 500px !important;
+    width: 100% !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.carousel-inner {
+    display: block !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.carousel-item {
+    display: block !important;
+    height: 100% !important;
+    position: relative !important;
+}

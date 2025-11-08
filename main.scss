@@ -1,0 +1,22 @@
+@import'./Blocks/_header.scss';
+@import './Blocks/_main.scss';
+@import './Blocks/_footer.scss';
+
+@font-face{
+    font-family: 'Raleway';
+    src: url(/raleway-regular.ttf);
+}
+
+@mixin smalltext ($color, $size) {
+    font-family: 'Raleway' ;
+    font-size: $size;
+    color: $color;
+}
+
+%second_title{
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: black;
+}
+
+
