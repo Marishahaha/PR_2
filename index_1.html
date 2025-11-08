@@ -66,7 +66,7 @@
 
 
     <main>
-        <section class="row align-items-center py-5 ps-5 pe-5 ">
+        <section class="row align-items-center py-5 pe-5 ps-5 ">
             <div class="col-md-6 text-end">
                 <img src="photos/Layer 0 1.png" alt="Art" class="img-fluid">
             </div>
@@ -191,7 +191,7 @@
 
         <!-- slider -->
         
-        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" style="max-height: 414px; height: 100%;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -256,12 +256,12 @@
         <!-- accordion section -->
         <section class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Информация для покупателей</h2>
+                <h2 class="display-3 fw-bold mb-4 text-center" style="color: #598D66;">Информация для покупателей</h2>
                 
                 <div class="accordion" id="infoAccordion">
                     <div class="accordion-item ">
                         <h2 class="accordion-header border-0">
-                            <button class="accordion-button border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#delivery">
+                            <button class="accordion-button border-0 bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#delivery" style="color:#598D66; font-size: 1.5rem;">
                                 Доставка
                             </button>
                         </h2>
@@ -280,7 +280,7 @@
                     
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#payment">
+                            <button class="accordion-button collapsed border-0 bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#payment" style="color:#598D66; font-size: 1.5rem;">
                                 Оплата
                             </button>
                         </h2>
@@ -299,7 +299,7 @@
                     
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed border-0 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#returns">
+                            <button class="accordion-button collapsed border-0 bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#returns" style="color:#598D66; font-size: 1.5rem;">
                                 Возврат и обмен
                             </button>
                         </h2>
@@ -329,17 +329,17 @@
     </main>
 
     <footer class="footer pt-5 " style="background: #E1EDE6; max-width: 1440px; width: 100%">
-        <div class="container" style="max-width: 1000px;">
+        <div class="container justify-content-between" style="max-width: 1000px;">
             <div class="row">
                 <!-- Контакты -->
-                <div class="col-md-3 mb-4 text-center text-md-start">
+                <div class="col-md-3 mb-4 text-center ">
                     <img src="icons/Frame 85.svg" alt="Телефон" class="mb-2">
                     <p class="text-color mb-1">+7 (999) 543-54-54</p>
                     <p class="text-color">Мастерская</p>
                 </div>
                 
                 <!-- Репродукции -->
-                <div class="col-md-3 mb-4 text-center text-md-start">
+                <div class="col-md-3 mb-4 text-center ">
                     <h5 class="text-dark mb-3">Репродукции</h5>
                     <p class="text-color mb-1">Франция</p>
                     <p class="text-color mb-1">Англия</p>
@@ -347,51 +347,51 @@
                 </div>
                 
                 <!-- Новинки -->
-                <div class="col-md-3 mb-4 text-center text-md-start">
+                <div class="col-md-3 mb-4 text-center">
                     <h5 class="text-dark mb-3">Новинки</h5>
                     <p class="text-color mb-1">2021</p>
                     <p class="text-color">2020</p>
                 </div>
                 
                 <!-- О нас -->
-                <div class="col-md-3 mb-4 text-center text-md-start">
+                <div class="col-md-3 mb-4 text-center ">
                     <h5 class="text-dark mb-3">О нас</h5>
                     <p class="text-color mb-1">Художники</p>
                     <p class="text-color">Менеджеры</p>
                 </div>
             </div>
             
-
-
             <!-- Форма подписки -->
-            <!-- Форма подписки -->
-            <div class="col-md-3 mb-4 text-center text-md-start">
-                <h5 class="text-dark mb-3">Подписка на новости</h5>
-                <form class="needs-validation" novalidate id="subscriptionForm">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="email" placeholder="Ваш email">
-                        <div class="invalid-feedback">
-                            Email должен содержать символ @
+            <div class="d-flex justify-content-center">
+                <div class="col-md-3 mb-4 text-md-start ali">
+                    <h5 class="text-dark mb-3">Подписка на новости</h5>
+                    <form class="needs-validation" novalidate id="subscriptionForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="email" placeholder="Ваш email">
+                            <div class="invalid-feedback">
+                                Email должен содержать символ @
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" id="password" placeholder="Пароль">
-                        <div class="invalid-feedback">
-                            Пароль должен содержать минимум 6 символов
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Пароль">
+                            <div class="invalid-feedback">
+                                Пароль должен содержать минимум 6 символов
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="agreeTerms">
-                        <label class="form-check-label text-color" for="agreeTerms">
-                            Я согласен с условиями подписки
-                        </label>
-                        <div class="invalid-feedback">
-                            Вы должны согласиться с условиями
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms">
+                            <label class="form-check-label text-color" for="agreeTerms">
+                                Я согласен с условиями подписки
+                            </label>
+                            <div class="invalid-feedback">
+                                Вы должны согласиться с условиями
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Подписаться</button>
-                </form>
+                        <button type="submit" class="btn btn-primary w-100">Подписаться</button>
+                    </form>
+                </div>
             </div>
+            
             
             
             
